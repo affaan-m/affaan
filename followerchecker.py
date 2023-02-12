@@ -30,17 +30,14 @@ L.load_session_from_file(USER) # (load session created w/
 
 profile = instaloader.Profile.from_username(L.context, USER)
 
-# creates following and followers and then creates 2 dataframes out of them
+# creates following and followers and then creates 2 sets out of them
 
-following = [x.username for x in profile.get_followees()]
-followers = [x.username for x in profile.get_followers()]
-
-following_df = pd.DataFrame(following, columns=['following'])
-followers_df = pd.DataFrame(followers, columns=['followers'])
+following = set([x.username for x in profile.get_followees()])
+followers = set([x.username for x in profile.get_followers()])
 
 # compares these dataframes and gets just the people not following you back
 
-not_following_back = [user for user in following if user not in followers_df['followers'].tolist()]
+not_following_back = following - followers
 
 with open('not_following_back.txt', 'w') as file:
     file.write('People you are following who are not following you back:\n')
