@@ -21,6 +21,8 @@ instaloader --l username
 
 "username" being your instagram handle
 
+when prompted with password as well as in the code "password" is your instagram accounts password
+
 Then download this script as a .py file and call it in your terminal using python3 followerchecker.py
 once this is complete check your user files /users/'your computer username'
 a text file named not_following_back should be there that contains usernames of all the people who do not follow you back
