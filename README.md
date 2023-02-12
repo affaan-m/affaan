@@ -15,6 +15,10 @@ pip install instaloader
 
 in your computer terminal
 
+if you dont have pandas already installed through anaconda then go ahead and install pandas as well 
+
+pip install pandas
+
 then login to instagram through creating an instance in your terminal by using  
 
 instaloader --l username
