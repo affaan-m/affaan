@@ -1,3 +1,7 @@
+# Bitcoin Price Predictor Using Holt's Linear Exponential Smoothing for Time-Series
+Uses Holt's Linear Exponential Smoothing on our Time Series to predict the price of bitcoin from the data available to us for the past 5 years downloaded off of yahoo finance. Techniques employed include bootstrapping, k fold validation, time series, regression analysis, exponential smoothing. Other methods I tried was Simple Linear Regression, Neural Networks, Decision Trees, Random Forest, ARIMA and more before landing on Holts.
+# Budget Calculator
+Calculates Budget based on your income and expenses
 # Instagram Follower Checker
 
 Step 1: 
@@ -6,9 +10,9 @@ Step 2: Compares Followers to Following.
 Step 3: Removes all common handles
 Step 4: Gives you a text file with a list of users who you follow that are not following you back
 
-# Guide
+Guide
 
-# Affaan's Instagram Follower Checker Tool to see who you are following that isn't following you back.
+Affaan's Instagram Follower Checker Tool to see who you are following that isn't following you back.
 First download the instaloader library using 
 
 pip install instaloader
