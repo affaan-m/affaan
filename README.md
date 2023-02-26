@@ -1,5 +1,5 @@
 # Bitcoin Price Predictor Using Holt's Linear Exponential Smoothing for Time-Series
-Uses Holt's Linear Exponential Smoothing on our Time Series to predict the price of bitcoin from the data available to us for the past 5 years downloaded off of yahoo finance. Techniques employed include bootstrapping, k fold validation, time series, regression analysis, exponential smoothing. Other methods I tried was Simple Linear Regression, Neural Networks, Decision Trees, Random Forest, ARIMA and more before landing on Holts.
+Uses Holt's Linear Exponential Smoothing on our Time Series to predict the price of bitcoin from the data available to us for the past 5 years downloaded off of yahoo finance. Techniques employed include bootstrapping, k fold validation, time series, regression analysis, exponential smoothing. Other methods I tried was Simple Linear Regression, Neural Networks, Decision Trees, Random Forest, ARIMA and more before landing on Holts. Another model using Prophet and Linear Regression is also in my portfolio.
 # Budget Calculator
 Calculates Budget based on your income and expenses
 # Instagram Follower Checker
