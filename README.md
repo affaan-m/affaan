@@ -1,3 +1,6 @@
+# AI Secretary/Consultant/Manager
+Uses OpenAI's API (GPT 3.5-Turbo Model) to take your priorities as input integrate with Google's Gmail and Calender API's and organize your inbox based on your priorities, send you an email with its suggestions as your secretary, consultant and manager and then finally take these suggestions and create google calender events for you based on its suggested times to streamline your workflow and take the brain drain out of self organization. Must have OpenAI API Key, Google API's enabled in a project and scopes/permissions set as in the code. Replace the email section with your email and replace the API-KEY with your OpenAI API key, if you have access to GPT-4 you can use that instead by simply changing the engine.
+
 # Bitcoin Price Predictor Using Holt's Linear Exponential Smoothing for Time-Series
 Uses Holt's Linear Exponential Smoothing on our Time Series to predict the price of bitcoin from the data available to us for the past 5 years downloaded off of yahoo finance. Techniques employed include bootstrapping, k fold validation, time series, regression analysis, exponential smoothing. Other methods I tried was Simple Linear Regression, Neural Networks, Decision Trees, Random Forest, ARIMA and more before landing on Holts. Another model using Prophet and Linear Regression is also in my portfolio.
 # Budget Calculator
