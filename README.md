@@ -42,7 +42,7 @@ This script analyzes your Instagram followers and those you follow, providing a 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This repository and all projects within is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 ### Connect with Me
