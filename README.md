@@ -40,6 +40,11 @@ This script analyzes your Instagram followers and those you follow, providing a 
 3. **Running the Script**: Download and run `followerchecker.py`.
 4. **Result**: Check your user files for a text file named `not_following_back` containing the usernames of those not following you back.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
 ### Connect with Me
 
 - **GitHub**: [affaan-m](https://github.com/affaan-m)
