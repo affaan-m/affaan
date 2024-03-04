@@ -1,17 +1,17 @@
 #include <HTTPClient.h>
 
-// Placeholder for fetching sentiment data
+// fetch sentiment data we get from first running the python script to preprocess and use VADER then convert to JSON and process here via a HTTP Request
 void fetchSentimentData() {
   if(WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
-    http.begin("http://example.com/sentiment/BTC"); // Example sentiment API
+    http.begin("http://example.com/sentiment/BTC"); //actual endpoint we will use is hosted elsewhere but not fully setup yet
     int httpCode = http.GET();
     
     if(httpCode > 0) {
         String sentimentPayload = http.getString();
         Serial.println(httpCode);
         Serial.println(sentimentPayload);
-        // Parse the sentimentPayload JSON and extract the sentiment
+        // sentiment extraction step gather sentiment with endpoint in python first -> preprocessing done in python
     }
     else {
         Serial.println("Error on HTTP request for sentiment data");
@@ -23,15 +23,13 @@ void fetchSentimentData() {
 void fetchCryptoPrices() {
   if(WiFi.status()== WL_CONNECTED){
     HTTPClient http;
-    http.begin("http://api.coindesk.com/v1/bpi/currentprice/BTC.json"); 
+    http.begin("http://api.coindesk.com/v1/bpi/currentprice/BTC.json"); // I might choose to fetch from CMC instead but API Costs are Prohibitive
     int httpCode = http.GET();
     
     if(httpCode > 0) {
         String pricePayload = http.getString();
         Serial.println(httpCode);
         Serial.println(pricePayload);
-        // Parse the pricePayload JSON and extract the price
-        // Consider calling fetchSentimentData() here or in the loop after fetching prices
     }
     else {
         Serial.println("Error on HTTP request for price data");
@@ -58,7 +56,7 @@ void setupDisplay() {
   display.setTextSize(1);      
   display.setTextColor(SSD1306_WHITE);  
   display.setCursor(0,0);
-  display.print("Crypto Price: "); // Placeholder text
+  display.print("Crypto Price: ");
   display.display();
 }
 
@@ -82,12 +80,9 @@ void setup() {
 
 void loop() {
   fetchCryptoPrices();
-  // Assuming fetchSentimentData() updates a global or passes data to updateDisplay
   fetchSentimentData();
-  // Update the display with new data
-  // You'll need to modify fetchCryptoPrices and fetchSentimentData to store their results in variables accessible here
-  String price = "12345"; // Placeholder for actual price fetching
-  String sentiment = "Positive"; // Placeholder for actual sentiment fetching
+  String price = "12345";
+  String sentiment = "Positive";
   updateDisplay(price, sentiment);
-  delay(10000); // Fetch prices and sentiment every 10 seconds
+  delay(10000); //
 }
