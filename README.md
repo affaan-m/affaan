@@ -125,10 +125,10 @@ A real-time tracker to display Bitcoin prices and their sentiment on an OLED dis
 ## **Connect with Me**
 
 - **GitHub**: [affaan-m](https://github.com/affaan-m)
-- **Instagram**: [affaan_rm](https://www.instagram.com/affaanmustafa/)
+- **Instagram**: [Affaan Mustafa](https://www.instagram.com/affaanmustafa/)
 - **LinkedIn**: [Affaan Mustafa](https://www.linkedin.com/in/affaanmustafa/)
 - **Twitter/X**: [Affaan Mustafa](https://www.x.com/affaanmustafa/)
-- **Linktree**: [linktr.ee/affaan.eth](https://linqapp.com/affaan_mustafa?r=link)
+- **Linktree**: [All Links](https://linqapp.com/affaan_mustafa?r=link)
 
 ---
 
